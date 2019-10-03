@@ -1,0 +1,1 @@
+[16-Jun-2015 15:20:16 America/Bogota] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/ecustic/public_html/Controlador/conexion.php on line 15
