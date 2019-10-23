@@ -1,29 +1,25 @@
 <?php
 
-class Conexion {
+class conexion {
+    
+    private $db_host='localhost';
+    private $db_user='root';
+    private $db_password='';
+    private $db_name='fervil';
+    private $connection;
 
-    private $db;
-
-    public function __construct() {
-        $this->db = $this->conectar();
+    public function __construct(){
+        $this->connection=$this->conectar();
     }
 
-    public static function conectar() {
-        date_default_timezone_set("America/Mexico_City");
-//        $link = mysql_connect('localhost', 'fervil_admin', 'Administrador.1');
-        $link = mysql_connect('localhost', 'root', '');
-        mysql_query("SET NAMES 'utf8'");
-        mysql_select_db('fervil') or die('fallo la db.');
-//        mysql_select_db('fervil_data') or die('fallo la db.');
-        //mysql_set_charset('utf8', $link);
-        return $link;
-    }
 
-    public function query($sql) {
-        return mysql_query($sql, $this->db);
-    }
+    public static function conectar(){
 
-    public function fetch($query) {
-        return mysql_fetch_assoc($query);
+        $connection=mysqli_connect($db_host, $db_user, $db_password, $db_name);
+        if(mysqli_connect_errno()){
+            echo 'no se pudo conectar'.mysqli_connect_error(); 
+        }
+
     }
 }
+    
