@@ -8,7 +8,7 @@ require_once 'backend/Model/claseController.php';
         <meta content="" name="keywords">
         <title>Fervil</title>
         <link href="css/estilos.css" rel="stylesheet" type="text/css" />
- 
+
 
         <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'/>
 
@@ -59,12 +59,12 @@ require_once 'backend/Model/claseController.php';
                     <li class="servicios"><a href="servicios.php"><img src="<?php echo $imagenes[28]['ubicacion']; ?>" /></a></li>
                     <li class="productos"><a href="productos.php"><img src="<?php echo $imagenes[22]['ubicacion']; ?>" /></a></li>
                 </ul>
-            </div> 
+            </div>
 
             <!--Fin_Banner-->
 
             <div id="contenido">
-                <!--Contenido-->  
+                <!--Contenido-->
 
 
                 <div id="ConCont">
@@ -74,7 +74,7 @@ require_once 'backend/Model/claseController.php';
 
                         <div id="objeto"><img src="<?php echo $imagenes[21]['ubicacion']; ?>" width="100%"/> </div>
 
-                        <p class="texto1" style="text-align:justify;"> 
+                        <p class="texto1" style="text-align:justify;">
                             <br/><?php echo $contenido[0]['texto']; ?><br>
                             <br/><?php echo $contenido[1]['texto']; ?>
                         </p>
@@ -129,7 +129,7 @@ require_once 'backend/Model/claseController.php';
                     <div id="info">
                         <p class="texto3">
                             | Calle 145 No 7c - 21(604) Bogotá D.C |  Teléfonos 3108599674  -  6255290 |
-                            <br/>  Email  info@fervil.co 
+                            <br/>  Email  info@fervil.co
                             <br/>  Desarrollado por  <a href="http://www.conjuntodigital.com"> <font color="orange">CONJUNTO DIGITAL</font> </a>
                         </p>
                     </div>
